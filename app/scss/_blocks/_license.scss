@@ -1,0 +1,148 @@
+.license {
+  margin-bottom: 180px;
+  &__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    color: #2f3f54;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    span {
+      color: #2575e7;
+    }
+  }
+  &__description {
+    margin: 0 auto;
+    max-width: 585px;
+    text-align: center;
+    margin-bottom: 117px;
+  }
+  &__list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    min-height: 720px;
+    position: relative;
+    width: 360px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.license-item {
+  overflow: hidden;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  &__title,
+  &__text {
+    margin: 0;
+    padding-left: 50px;
+  }
+  &__text {
+    margin-bottom: 55px;
+  }
+  &__images {
+    img {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 157px;
+      height: 123px;
+      margin-bottom: 45px;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 95px;
+    margin-bottom: 21px;
+  }
+  &__price {
+    position: absolute;
+    background-color: #2575e7;
+    color: #fff;
+    width: 320px;
+    height: 444px;
+    border-radius: 50%;
+    bottom: 0;
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 33px;
+    font-family: "Roboto", "Arial", sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  &__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    color: #267ae9;
+    margin-bottom: 20px;
+  }
+}
+.orange {
+  color: #e74c3c;
+}
+.light-green {
+  color: #42d6c1;
+}
+
+.license-item:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.license-box {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1160px) {
+  .license {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 48%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0 auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .license {
+    &__item {
+      width: 100%;
+      margin-bottom: 70px;
+    }
+    &__title {
+      padding: 0 15px;
+    }
+    &__description {
+      padding: 0 15px;
+      margin-bottom: 65px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .license {
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+}

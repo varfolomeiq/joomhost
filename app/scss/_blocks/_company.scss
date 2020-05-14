@@ -1,0 +1,16 @@
+.company {
+  background-color: #fff;
+  background-image: url(../img/company.png);
+  background-repeat: no-repeat;
+  width: 1103px;
+  height: 97px;
+  margin: 0 auto;
+  margin-top: 98px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1103px) {
+  .company {
+    display: none;
+  }
+}

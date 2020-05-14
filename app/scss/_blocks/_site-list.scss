@@ -1,0 +1,35 @@
+.site-list {
+  display: flex;
+
+  &__item {
+    margin-right: 40px;
+    min-height: 87px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: $dark-blue;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .site-list {
+    flex-direction: column;
+    &__item {
+      border-bottom: 2px solid #2f3f54;
+      min-height: 65px;
+      margin-right: 0;
+      justify-content: center;
+      &:first-child {
+        border-top: 2px solid #2f3f54;
+      }
+    }
+  }
+}

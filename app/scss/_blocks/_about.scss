@@ -1,0 +1,152 @@
+.about {
+  background-color: #fafafa;
+  padding-top: 120px;
+  padding-bottom: 105px;
+  &-slide {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #2f3f54;
+    text-align: center;
+    padding-bottom: 165px;
+    margin: 0;
+    span {
+      color: #267ae9;
+    }
+  }
+  &__item {
+    display: flex;
+    min-height: 347px;
+  }
+  &__text,
+  &__author {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &__author {
+    font-weight: 700;
+    span {
+      color: #267ae9;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    max-width: 524px;
+    box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  }
+}
+
+.column-left {
+  display: flex;
+  align-items: center;
+  background-color: #267ae9;
+  justify-content: center;
+  width: 37.213%;
+  flex-grow: 1;
+  min-height: 347px;
+}
+.column-right {
+  width: 62.786%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-left: 39px;
+  padding-right: 43px;
+  background-color: #fff;
+}
+
+.about-slide .slick-dots {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+}
+
+.about-slide .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #267ae9;
+  outline: none;
+  margin: 0 8px;
+}
+
+.about-slide .slick-dots .slick-active button {
+  background-color: transparent;
+  border: 2px solid #267ae9;
+}
+
+.about-slide .slick-list {
+  margin: 0 -50px;
+}
+
+.about-slide .slick-slide {
+  margin: 0 50px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1265px) {
+  .about-slide .slick-list {
+    margin: 0;
+  }
+
+  .about-slide .slick-slide {
+    margin: 0;
+  }
+  .about {
+    &__title {
+      padding-bottom: 80px;
+    }
+    &__wrapper {
+      box-shadow: none;
+      width: 100%;
+      max-width: 524px;
+      margin: 0 auto;
+    }
+  }
+  .column-right {
+    padding-top: 30px;
+  }
+  .column-left,
+  .column-right {
+    width: 100%;
+    max-width: 524px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    padding: 80px 0;
+    &__title {
+      padding: 0 15px 65px 15px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .about {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+  .column-left {
+    min-height: 220px;
+  }
+  .column-right {
+    padding-bottom: 30px;
+  }
+}

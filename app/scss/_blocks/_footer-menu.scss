@@ -1,0 +1,19 @@
+.footer-menu {
+  padding-top: 80px;
+  &__list {
+    @include reset-list;
+  }
+  &__link {
+    text-decoration: none;
+    color: #718db2;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #d0e4ff;
+  }
+  &__item {
+    margin-bottom: 5px;
+  }
+}

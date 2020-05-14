@@ -1,0 +1,15 @@
+.advantages {
+  margin-bottom: 75px;
+  &__list {
+    @include reset-list;
+    padding-left: 50px;
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: "\ea10";
+      font-family: "icomoon";
+      margin-right: 20px;
+    }
+  }
+}

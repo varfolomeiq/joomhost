@@ -1,0 +1,10 @@
+.main-nav {
+  &__list {
+    @include reset-list;
+  }
+}
+@media (max-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+  }
+}

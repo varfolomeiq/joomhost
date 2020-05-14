@@ -1,0 +1,57 @@
+.input-control {
+  border: none;
+  background-color: #304054;
+  box-shadow: 0 0 0 1px #3b4a5d;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #718db2;
+  outline: none;
+  width: 100%;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.message-control {
+  width: 100%;
+  height: 85px;
+  background-color: #304054;
+  border: none;
+  box-shadow: 0 0 0 1px #3b4a5d;
+  resize: none;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  line-height: 22px;
+  padding-left: 10px;
+  padding-top: 13px;
+  color: #718db2;
+  outline: none;
+}
+textarea::-webkit-input-placeholder {
+  color: #718db2;
+}
+textarea:-moz-placeholder {
+  color: #718db2;
+}
+input::-webkit-input-placeholder {
+  color: #718db2;
+}
+input::-moz-placeholder {
+  color: #718db2;
+}
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
